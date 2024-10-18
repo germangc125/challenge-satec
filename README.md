@@ -18,7 +18,7 @@ y tiene 5 endpoints:
 
 
   Este proyecto usa interceptores, servicios, componentes, entre otros, se considera que el api ya trae los datos procesados.
-  Para el responsive se ha usado boostrap.
+  Para el responsive se ha usado bootstrap.
 
 
   3. Dificultades - Uso de apimocha para actualizar/eliminar
