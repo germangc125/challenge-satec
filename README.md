@@ -1,8 +1,8 @@
 Ejecutar
 
-1. - Para inicializar el proyecto debemos descargar el codigo.
+1. - Para inicializar el proyecto debemos descargar el codigo. 
   git clone https://github.com/germangc125/challenge-satec.git
-- Ejecutar el comando npm npm install --force ->  el --force por que hay librerias aun no migradas a angular 17 sin embargo funcionan sin problema como lo son: 
+- Ingresar a la carpeta app/ y ejecutar el comando npm npm install --force ->  el --force por que hay librerias aun no migradas a angular 17 sin embargo funcionan sin problema como lo son: 
   * @developer-partners/ngx-modal-dialog 
   * ngx-toastr
 - Ejecutar ng serve 
