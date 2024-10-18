@@ -1,0 +1,7 @@
+<div>
+  <app-plant-selector (selectedPlant)="updatePlant($event)"></app-plant-selector>
+  <app-list-rooms [selectedPlant]="plantCurrent"></app-list-rooms>
+  <!-- <app-form-room (newRoom)="addRoom($event)"></app-form-room> -->
+</div>
+
+<ngx-loading [show]="loading$ | async" [config]="{ backdropBorderRadius: '4px' }"></ngx-loading>

@@ -1,0 +1,18 @@
+select{
+  width: 25%;
+}
+
+h1.title {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #2E344D; /* Dark blue */
+}
+
+.hr {
+  display: flex;
+
+  hr{
+    width: 80%;
+    margin: auto;
+  }
+}

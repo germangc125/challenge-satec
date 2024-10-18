@@ -1,0 +1,48 @@
+<!-- <div *ngIf="rooms.length">
+  <h2>Salas de {{ selectedPlant }}</h2>
+  <ul>
+    <li *ngFor="let sala of rooms">
+      <strong>{{ sala.name }}</strong> - Capacidad: {{ sala.capacity }} - Ocupación: {{ sala.occupation }}
+    </li>
+  </ul>
+</div>
+<div *ngIf="!rooms.length">
+  <p>No hay salas en {{ selectedPlant }}</p>
+</div> -->
+
+
+
+
+<div class="container my-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h4 class="title">Planta {{ selectedPlant }} </h4>
+    <button class="btn btn-dark" (click)="openModalRoom(null)">Añadir sala</button>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-3 col-md-6 mb-4" *ngFor="let room of rooms">
+      <div class="card sala-card">
+        <div class="card-body">
+          <div class="header">
+            <h5 class="card-title">{{ room.name }}</h5>
+            <i class="fa-solid fa-trash" (click)="confirmDeleteRoom(room)"></i>
+          </div>
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Capacidad máxima</label>
+              <input type="number" class="form-control" name="capacity" [(ngModel)]="room.capacity" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Ocupación</label>
+              <div class="input-group">
+                <input type="number" class="form-control" name="occupation" [(ngModel)]="room.occupation" />
+                <span class="input-group-text">%</span>
+              </div>
+            </div>
+            <button class="btn btn-dark w-100" (click)="openModalRoom(room)">Modificar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.container {
+  border-radius: 26px;
+  background-color: #2e344d;
+  color: white;
+  padding: 20px;
+
+  .header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    i {
+      cursor: pointer;
+    }
+  }
+}

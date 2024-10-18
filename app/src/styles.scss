@@ -1,0 +1,53 @@
+@import 'ngx-toastr/toastr';
+
+body {
+  font-family: 'Helvetica', sans-serif;
+}
+
+
+/* Selector de planta */
+.form-group .form-label {
+  font-weight: bold;
+  color: #2E344D;
+}
+
+.form-select {
+  border-radius: 12px;
+  border: 2px solid #DDE1E7;
+  padding: 8px;
+}
+
+/* Estilos para las tarjetas de sala */
+.sala-card {
+  background-color: #F5F7FB; /* Light blue */
+  border-radius: 26px;
+  border: 2px solid #DDE1E7; /* Light border */
+}
+
+.sala-card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2E344D;
+  margin-bottom: 1rem;
+}
+
+/* Inputs */
+.form-control {
+  border-radius: 12px;
+  border: 2px solid #DDE1E7;
+  padding: 10px;
+}
+
+.input-group-text {
+  border-radius: 12px;
+  background-color: #DDE1E7;
+  border: none;
+}
+
+button.btn {
+  color: white;
+  border-radius: 12px;
+  padding: 10px;
+  font-weight: bold;
+}
+
